@@ -1,0 +1,12 @@
+# Core data/EDA
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+
+# Jupyter
+jupyter>=1.0
+ipykernel>=6.29
+
+# (Opcional) integração com PostgreSQL via Python
+sqlalchemy>=2.0
