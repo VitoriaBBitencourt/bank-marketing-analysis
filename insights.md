@@ -14,8 +14,7 @@ SELECT y, COUNT(*) AS total,
 FROM dados_marketing
 GROUP BY y;
 
-Resultado:
-
+Resultado: ![Taxa de adesão](screenshots/adesao_geral.png)
 
 Interpretação:
 Apenas ~11% dos clientes aceitaram o produto. Isso mostra que a campanha tem baixa conversão, exigindo segmentação melhor.
@@ -31,15 +30,14 @@ GROUP BY age_range, y
 ORDER BY age_range, y;
 
 
-Resultado:
-
+Resultado: ![Idade e taxa de adesão](screenshots/idade_vs_adesao.png)
 
 Interpretação:
 Clientes jovens (<25) e aposentados (65+) apresentam taxas de adesão mais altas que a média.
 
 Insight 3 — Duração da chamada é decisiva
 
-Query:
+Query: 
 
 SELECT CASE WHEN duration < 300 THEN 'short_call' ELSE 'long_call' END AS call_length_group,
        y, COUNT(*) AS total,
@@ -49,8 +47,7 @@ GROUP BY call_length_group, y
 ORDER BY call_length_group, y;
 
 
-Resultado:
-
+Resultado: ![Tempo chamada e taxa de adesão](screenshots/duracao_vc_adesao.png)
 
 Interpretação:
 Chamadas curtas (<300s) têm taxas baixíssimas (~5%). Já chamadas longas (>300s) superam 40% de adesão.
@@ -66,8 +63,7 @@ GROUP BY previously_contacted
 ORDER BY previously_contacted;
 
 
-Resultado:
-
+Resultado: ![Contato anterior e taxa de adesão](screenshots/contato_repetido_vs_adesao.png)
 
 Interpretação:
 Clientes já contatados antes convertem menos. Isso sugere que insistência em excesso pode desgastar o cliente.
@@ -84,8 +80,7 @@ ORDER BY subscription_rate DESC
 LIMIT 5;
 
 
-Resultado:
-
+Resultado: ![Educação e taxa de adesão](screenshots/educacao_vs_adesao.png)
 
 Interpretação:
 Estudantes e aposentados apresentam as maiores taxas de adesão.
