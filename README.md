@@ -63,7 +63,9 @@ Abra os notebooks em python/ no Jupyter ou VSCode
 
 (Opcional) Carregue updated_data.csv no PostgreSQL e execute as queries em sql/bank_marketing_analysis.sql
 
-Principais insights
+---
+
+## Principais insights
 Apenas ~11% dos clientes aceitaram o produto (baixa taxa de conversão)
 
 Estudantes e aposentados são os grupos com maior taxa de adesão
