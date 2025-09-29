@@ -1,0 +1,38 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+*.log
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+.jupyter/
+
+# --- SO / Editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- Secrets ---
+.env
+*.key
+*.pem
+
+# --- Dados ---
+# Ignore tudo em data/, exceto o que você quer versionar explicitamente
+data/*
+!data/updated_data.csv
+!data/README.md
+
+# --- Dumps/Backups Postgres ---
+*.sql.gz
+*.dump
+*.bak
+
+# --- Artefatos temporários de imagens/docs (se usar) ---
+docs/screenshots/raw/
